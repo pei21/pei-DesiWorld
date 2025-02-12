@@ -30,6 +30,7 @@ html {
   transition: 0.5s;
 }
 body {
+  font-size: 14px;
   font-family: var(--body-font);
   font-weight: 200; /* Light */
 }
@@ -70,7 +71,7 @@ h4 {
 
 p {
   color: var(--black);
-  font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+  calc(16px + (18 - 14) * (100vw - 1000px) / (500 - 300));
   margin: 2rem 0;
 }
 .footer-p {
@@ -358,6 +359,14 @@ section > * {
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
+}
+.video-hero {
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 80%; /* You can adjust this as needed */
+  margin: 0 auto; /* This ensures the container is centered on the page */
 }
 video {
   display: grid;
