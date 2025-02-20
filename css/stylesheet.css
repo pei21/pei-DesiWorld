@@ -30,7 +30,6 @@ html {
   transition: 0.5s;
 }
 body {
-  font-size: 14px;
   font-family: var(--body-font);
   font-weight: 200; /* Light */
 }
@@ -71,7 +70,7 @@ h4 {
 
 p {
   color: var(--black);
-  font-size: calc(16px + (18 - 14) * (100vw - 1000px) / (500 - 300));
+  font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
   margin: 2rem 0;
 }
 .footer-p {
@@ -202,12 +201,12 @@ nav ul > li {
   margin-bottom: 8px;
   flex-basis: 100%;
 }
-nav ul li {
+nav ul li a {
   text-decoration: none;
   color: var(--black);
   margin: 20px;
 }
-nav ul li :hover {
+nav ul li a:hover {
   text-decoration: none;
   color: var(--dark-grey);
   border-bottom: 2px solid var(--accent-colour);
@@ -280,7 +279,6 @@ nav ul li :hover {
 .resume-btn:hover {
   background-color: #ffe9b3; /* Light yellow */
   color: black;
-  padding: 10px 20px;
 }
 /* Styling for the Sections */
 section {
