@@ -32,6 +32,7 @@ html {
 body {
   font-family: var(--body-font);
   font-weight: 200; /* Light */
+  line-height: 1.8;
 }
 h1,
 h2,
@@ -168,14 +169,14 @@ img {
   display: inline-block;
   font-size: 2em;
   font-weight: bold;
-  animation: bounceText 1s infinite, colorChangeText 2s infinite;
+  /* animation: bounceText 1s infinite, colorChangeText 2s infinite; */
 }
 
-.animated-emoji {
+/* .animated-emoji {
   display: inline-block;
   font-size: 2em;
   animation: bounceEmoji 1s infinite, colorChangeEmoji 2s infinite;
-}
+} */
 /* Styling the Navigation */
 header {
   position: fixed;
@@ -382,6 +383,11 @@ video {
   grid-template-columns: 1fr;
   justify-items: center;
 }
+.art-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .project-title {
   display: flex;
@@ -514,6 +520,11 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
   }
+  .art-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /* Medium devices (i.e. tablets in landscape */
@@ -523,6 +534,13 @@ video {
 /* Large devices (i.e. desktop) */
 
 @media (min-width: 1200px) {
+  section {
+    display: grid;
+    min-height: calc(100vh - var(--section-padding-top));
+    padding-top: var(--section-padding-top);
+    grid-template-columns: 15% 1fr 15%;
+    align-content: start;
+  }
 }
 
 /* X-Large devices (i.e. big desktop) */
