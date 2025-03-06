@@ -359,6 +359,7 @@ section > * {
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
+  align-items: center;
 }
 .video-hero {
   display: flex; /* Use flexbox to center content */
@@ -386,6 +387,18 @@ video {
 .art-video {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.Humber-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.two-columns1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
   align-items: center;
 }
 
@@ -521,6 +534,11 @@ video {
     justify-items: center;
   }
   .art-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Humber-video {
     display: flex;
     flex-direction: row;
     align-items: center;
