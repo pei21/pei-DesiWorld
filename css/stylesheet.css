@@ -53,6 +53,7 @@ h1 {
   margin-bottom: 3rem;
 }
 h2 {
+  margin-top: 20px;
   font-size: calc(32px + (48 - 32) * (100vw - 400px) / (1800 - 400));
   margin-bottom: 1.5rem;
   color: var(--black);
@@ -73,7 +74,7 @@ h4 {
 p {
   color: var(--black);
   font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
-  margin: 2rem 0;
+  margin: 2rem;
 }
 .footer-p {
   color: var(--white);
@@ -271,22 +272,23 @@ nav ul li a:hover {
 #menu-icon a:hover {
   background: none;
 }
-/* .resume-btn {
+.resume-btn {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px;
-  font-size: 16px;
-  background-color: #cadaff; 
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #cadaff;
   color: black;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .resume-btn:hover {
-  background-color: #ffe9b3; 
+  background-color: #ffe9b3;
   color: black;
-} */
+}
 /* Styling for the Sections */
 section {
   display: grid;
@@ -314,6 +316,7 @@ section > * {
   align-items: center;
 }
 .competitive-viva ul li {
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (1800 - 400));
   margin: 40px 0;
 }
 /* animation viva-project */
@@ -341,6 +344,7 @@ section > * {
 .animate-item {
   animation: colorChange 3s ease-in-out infinite; /* Infinite color change */
   display: inline-block;
+  font-size: 18px;
   font-weight: bold;
   transition: color 0.3s ease; /* Smooth transition for the color change */
 }
@@ -366,6 +370,14 @@ section > * {
   animation-delay: 1.2s;
 }
 /* Styling the Sections-viva */
+.project-image {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc; /* Light gray stroke */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 4px; /* Optional: space between image and border */
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
 .two-columns {
   display: grid;
   grid-template-columns: 1fr;
@@ -421,6 +433,10 @@ video {
 }
 .featured {
   grid-column: 1/-1; /*This Class can be used to stretch an item the entire width of the parent grid */
+}
+/* Styling for about section */
+.Skill-detail {
+  margin: 100px 0;
 }
 
 /* Styling for the Portfolio Section */
@@ -524,7 +540,7 @@ video {
   }
   .introduction {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 4rem;
     /* padding: var(--section-padding-top) 5%; */
@@ -537,7 +553,14 @@ video {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
+    margin: 30px;
+  }
+  .two-columns-slogan {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 30px 160px;
   }
   .about-p {
     grid-template-columns: 1fr;
