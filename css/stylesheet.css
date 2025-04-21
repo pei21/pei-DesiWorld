@@ -74,7 +74,7 @@ h4 {
 p {
   color: var(--black);
   font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
-  margin: 2rem;
+  margin: 2rem 0;
 }
 .footer-p {
   color: var(--white);
@@ -325,6 +325,9 @@ section > * {
   list-style: none;
   padding: 0;
 }
+.p-detail {
+  margin: 2rem;
+}
 
 /* Smooth color animation */
 @keyframes colorChange {
@@ -461,6 +464,14 @@ video {
 /* Styling for the About */
 #about ul {
   list-style: none;
+}
+.column video {
+  width: 100%;
+  max-width: 100%; /* Set a max size for consistency */
+  aspect-ratio: 16 / 9; /* Keeps videos proportional */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #000; /* Optional: background fill for aspect ratio */
 }
 /* skill lists below */
 .two-columns-fixed {
