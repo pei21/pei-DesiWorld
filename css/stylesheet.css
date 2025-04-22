@@ -205,7 +205,7 @@ nav ul {
   text-align: center;
 }
 nav ul > li {
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 8px;
   flex-basis: 100%;
 }
@@ -534,6 +534,7 @@ video {
     height: auto;
   }
   nav ul {
+    padding: 0 100px;
     flex-direction: row;
     align-items: baseline;
   }
