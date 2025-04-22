@@ -82,7 +82,7 @@ p {
   margin-bottom: 2rem;
 }
 a {
-  font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(16px + (18 - 12) * (100vw - 400px) / (1800 - 400));
   text-decoration: none;
   color: var(--black);
 }
