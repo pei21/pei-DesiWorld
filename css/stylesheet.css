@@ -457,7 +457,7 @@ video {
 
 .three-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* This creates 3 equal columns */
+  grid-template-columns: 1fr; /* This creates 3 equal columns */
   gap: 20px; /* Adds spacing between the items */
 }
 
@@ -476,7 +476,7 @@ video {
 /* skill lists below */
 .two-columns-fixed {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
 }
