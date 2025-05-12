@@ -82,7 +82,7 @@ p {
   margin-bottom: 2rem;
 }
 a {
-  font-size: calc(16px + (18 - 12) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(14px + (16 - 12) * (100vw - 400px) / (1800 - 400));
   text-decoration: none;
   color: var(--black);
 }
@@ -432,7 +432,7 @@ video {
 .project-title {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  /* margin: 50px 0; */
 }
 .featured {
   grid-column: 1/-1; /*This Class can be used to stretch an item the entire width of the parent grid */
@@ -528,6 +528,34 @@ video {
 .auto-height {
   min-height: auto;
 }
+/* Styling for the ecommerce project */
+.two-column-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 1rem;
+}
+
+.two-column-lists ul {
+  padding-left: 20px;
+}
+.two-column-lists li {
+  list-style: disc;
+  margin-bottom: 0.5rem; /* Adds spacing between list items */
+}
+.identify-solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* Adjust spacing between columns as needed */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.identify-solutions-grid picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* Small devices (i.e. tablets in portrait) */
 @media (min-width: 600px) {
   nav {
@@ -615,10 +643,24 @@ video {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  .identify-solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; /* Adjust spacing between columns as needed */
+    align-items: center;
+    margin-top: 2rem;
+  }
 }
 
 /* Medium devices (i.e. tablets in landscape */
 @media (min-width: 900px) {
+  .identify-solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Adjust spacing between columns as needed */
+    align-items: center;
+    margin-top: 2rem;
+  }
 }
 
 /* Large devices (i.e. desktop) */
