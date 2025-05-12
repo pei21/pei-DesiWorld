@@ -61,6 +61,7 @@ h2 {
 h3 {
   font-size: calc(24px + (30 - 20) * (100vw - 400px) / (1800 - 400));
   color: var(--black);
+  margin: 50px 0;
 }
 .footer-h3 {
   font-size: calc(24px + (30 - 20) * (100vw - 400px) / (1800 - 400));
@@ -70,11 +71,15 @@ h4 {
   font-size: calc(18px + (30 - 20) * (100vw - 400px) / (1800 - 400));
   color: #ba551b;
 }
+h5 {
+  font-size: calc(18px + (30 - 20) * (100vw - 400px) / (1800 - 400));
+  color: var(--black);
+}
 
 p {
   color: var(--black);
   font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .footer-p {
   color: var(--white);
@@ -277,12 +282,27 @@ nav ul li a:hover {
   padding: 10px 20px;
   margin: 0 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #cadaff;
   color: black;
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
+}
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #cadaff;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.project-btn:hover {
+  background-color: #ffe9b3;
+  color: black;
 }
 
 .resume-btn:hover {
