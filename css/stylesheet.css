@@ -548,6 +548,35 @@ video {
 .auto-height {
   min-height: auto;
 }
+/* Styling for the flowfit project */
+.flowfit-video {
+  width: 100%; /* Full width of the container */
+  max-height: 60vh; /* No taller than 90% of screen height */
+  height: auto; /* Auto height based on aspect ratio */
+  object-fit: contain; /* Cover the container nicely */
+  display: block;
+  margin: 50px auto;
+}
+
+.two-columns-flowfit {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.flowfit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.flowfit-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* Styling for the ecommerce project */
 .two-column-lists {
   display: grid;
@@ -615,6 +644,7 @@ video {
     grid-template-columns: 1fr 1fr;
     margin: 30px;
   }
+
   .two-columns-slogan {
     display: grid;
     align-items: center;
@@ -670,6 +700,18 @@ video {
     align-items: center;
     margin-top: 2rem;
   }
+  .flowfit-video {
+    width: 100%; /* Full width of the container */
+    max-height: 50vh; /* No taller than 90% of screen height */
+    height: auto; /* Auto height based on aspect ratio */
+    object-fit: contain; /* Cover the container nicely */
+    display: block;
+    margin: 50px auto;
+    border-radius: 12px;
+  }
+  .flowfit-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /* Medium devices (i.e. tablets in landscape */
@@ -680,6 +722,15 @@ video {
     gap: 2rem; /* Adjust spacing between columns as needed */
     align-items: center;
     margin-top: 2rem;
+  }
+  .flowfit-video {
+    width: 100%; /* Full width of the container */
+    max-height: 70vh; /* No taller than 90% of screen height */
+    height: auto; /* Auto height based on aspect ratio */
+    object-fit: contain; /* Cover the container nicely */
+    display: block;
+    margin: 50px auto;
+    border-radius: 12px;
   }
 }
 
@@ -698,4 +749,13 @@ video {
 /* X-Large devices (i.e. big desktop) */
 
 @media (min-width: 1800px) {
+  .flowfit-video {
+    width: 100%; /* Full width of the container */
+    max-height: 80vh; /* No taller than 90% of screen height */
+    height: auto; /* Auto height based on aspect ratio */
+    object-fit: contain; /* Cover the container nicely */
+    display: block;
+    margin: 50px auto;
+    border-radius: 12px;
+  }
 }
