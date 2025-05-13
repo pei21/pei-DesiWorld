@@ -441,13 +441,13 @@ video {
   flex-direction: column;
   align-items: center;
 }
-.two-columns1 {
+/* .two-columns1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   margin-bottom: 2rem;
   align-items: center;
-}
+} */
 
 .project-title {
   display: flex;
@@ -547,6 +547,19 @@ video {
 
 .auto-height {
   min-height: auto;
+}
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card a:hover {
+  transform: scale(1.02);
+  background-color: #f5f5f5;
 }
 /* Styling for the flowfit project */
 .flowfit-video {
