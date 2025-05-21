@@ -6,3 +6,8 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// project seciton
+
+const marquee = document.querySelector(".marquee");
+marquee.innerHTML += marquee.innerHTML;

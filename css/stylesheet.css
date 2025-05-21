@@ -53,7 +53,7 @@ h1 {
   margin-bottom: 3rem;
 }
 h2 {
-  margin-top: 20px;
+  margin-top: 100px;
   font-size: calc(32px + (48 - 32) * (100vw - 400px) / (1800 - 400));
   margin-bottom: 1.5rem;
   color: var(--black);
@@ -312,7 +312,7 @@ nav ul li a:hover {
 /* Styling for the Sections */
 section {
   display: grid;
-  min-height: calc(100vh - var(--section-padding-top));
+  min-height: calc(50vh - var(--section-padding-top));
   padding-top: var(--section-padding-top);
   grid-template-columns: 5% 1fr 5%;
   align-content: start;
@@ -500,6 +500,162 @@ video {
   grid-gap: 2rem;
   margin-bottom: 2rem;
 }
+/* styling for project section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  grid-template-columns: 10% 1fr 10%;
+  /* max-width: 90%; */
+}
+
+.hero h2 {
+  margin-top: 150px;
+  font-weight: bold;
+  font-size: calc(20px + (56 - 30) * (100vw - 400px) / (1800 - 400));
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.hero p {
+  color: var(--black);
+  font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+  margin: 1rem 0;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #333; /* Stick the background here */
+  padding: 20px 0;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+  white-space: nowrap;
+  font-size: 2rem;
+  font-weight: 150;
+  color: #f9f9f9;
+}
+
+.marquee-content {
+  padding-right: 100px; /* spacing between repeated texts */
+}
+/* client card */
+.testimonials-container {
+  width: 80%; /* Or any fixed width like 1200px */
+  max-width: 800px; /* Max width for large screens */
+  margin: 0; /* Center horizontally */
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden; /* Hide scrollbar or overflow */
+  background: #fff; /* White background or your preferred color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-track {
+  overflow: visible; /* Set to visible because container hides overflow */
+}
+
+.testimonials-inner {
+  display: flex;
+  gap: 2em;
+  animation: scroll-left 40s linear infinite;
+  will-change: transform;
+  /* Remove white-space: nowrap here */
+}
+.clients-card {
+  flex-shrink: 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  min-width: 300px;
+  color: #333;
+  white-space: normal; /* ✅ Ensure text wraps inside cards */
+}
+
+.clients-quote {
+  font-style: italic;
+  margin-bottom: 15px;
+  white-space: normal; /* Wrap text */
+  overflow-wrap: break-word;
+}
+
+.clients-info-2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.clients-info-image-2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.testimonials-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee span {
+  display: inline-block;
+  padding-right: 100px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 /* Styling the Contact section */
 #contact {
   min-height: auto;
@@ -539,7 +695,7 @@ video {
   color: var(--black);
   background: var(--light-yellow);
 }
-/* Styling for the project */
+/* Styling for each project */
 .intro-paragraph {
   font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
   grid-column: 1/-1;
@@ -651,7 +807,7 @@ video {
     align-items: center;
     gap: 4rem;
     /* padding: var(--section-padding-top) 5%; */
-    /* min-height: calc(100vh - var(--section-padding-top)); */
+    min-height: calc(30vh - var(--section-padding-top));
   }
   .navexpanded #close-icon {
     display: none;
