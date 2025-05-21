@@ -61,7 +61,7 @@ h2 {
 h3 {
   font-size: calc(24px + (30 - 20) * (100vw - 400px) / (1800 - 400));
   color: var(--black);
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .footer-h3 {
   font-size: calc(24px + (30 - 20) * (100vw - 400px) / (1800 - 400));
@@ -817,6 +817,13 @@ video {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     margin: 80px 0;
+  }
+  .two-columns-skills{
+      display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+  }
   }
 
   .two-columns-slogan {
