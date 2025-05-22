@@ -409,6 +409,7 @@ section > * {
   margin-bottom: 2rem;
   align-items: center;
 }
+
 .video-hero {
   display: flex; /* Use flexbox to center content */
   flex-direction: column;
@@ -820,7 +821,7 @@ video {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    margin: 80px 0;
+    margin: 40px 0;
   }
   .two-columns-skills {
     display: grid;
