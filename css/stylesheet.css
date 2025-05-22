@@ -557,13 +557,13 @@ video {
   width: max-content;
   animation: scroll-left 30s linear infinite;
   white-space: nowrap;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 150;
   color: #f9f9f9;
 }
 
 .marquee-content {
-  padding-right: 100px; /* spacing between repeated texts */
+  padding-right: 60px; /* spacing between repeated texts */
 }
 /* client card */
 .testimonials-container {
@@ -818,12 +818,11 @@ video {
     grid-template-columns: 1fr 1fr;
     margin: 80px 0;
   }
-  .two-columns-skills{
-      display: grid;
+  .two-columns-skills {
+    display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     margin: 30px 0;
-  }
   }
 
   .two-columns-slogan {
@@ -893,6 +892,15 @@ video {
   .flowfit-grid {
     grid-template-columns: repeat(5, 1fr);
   }
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    white-space: nowrap;
+    font-size: 2rem;
+    font-weight: 150;
+    color: #f9f9f9;
+  }
 }
 
 /* Medium devices (i.e. tablets in landscape */
@@ -920,7 +928,7 @@ video {
 @media (min-width: 1200px) {
   section {
     display: grid;
-    min-height: calc(100vh - var(--section-padding-top));
+    min-height: calc(60vh - var(--section-padding-top));
     padding-top: var(--section-padding-top);
     grid-template-columns: 15% 1fr 15%;
     align-content: start;
