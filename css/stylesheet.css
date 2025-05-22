@@ -461,6 +461,9 @@ video {
 .Skill-detail {
   margin: 100px 0;
 }
+.intro-image-light {
+  width: 30%;
+}
 
 /* Styling for the Portfolio Section */
 #projects a:hover h3,
@@ -549,7 +552,7 @@ video {
   overflow: hidden;
   width: 100%;
   background-color: #333; /* Stick the background here */
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .marquee {
@@ -645,7 +648,7 @@ video {
 }
 .marquee span {
   display: inline-block;
-  padding-right: 100px;
+  padding-right: 60px;
 }
 
 @keyframes scroll-left {
@@ -897,7 +900,7 @@ video {
     width: max-content;
     animation: scroll-left 30s linear infinite;
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 150;
     color: #f9f9f9;
   }
@@ -921,6 +924,15 @@ video {
     margin: 50px auto;
     border-radius: 12px;
   }
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: 150;
+    color: #f9f9f9;
+  }
 }
 
 /* Large devices (i.e. desktop) */
@@ -932,6 +944,16 @@ video {
     padding-top: var(--section-padding-top);
     grid-template-columns: 15% 1fr 15%;
     align-content: start;
+  }
+  .testimonials-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -946,5 +968,15 @@ video {
     display: block;
     margin: 50px auto;
     border-radius: 12px;
+  }
+  .testimonials-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
