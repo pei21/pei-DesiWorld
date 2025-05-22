@@ -59,7 +59,7 @@ h2 {
   color: var(--black);
 }
 h3 {
-  font-size: calc(36px + (36 - 20) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(30px + (36 - 20) * (100vw - 400px) / (1800 - 400));
   color: var(--black);
   margin: 30px 0;
 }
@@ -78,7 +78,7 @@ h5 {
 
 p {
   color: var(--black);
-  font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(20px + (20 - 16) * (100vw - 400px) / (1800 - 400));
   margin: 1rem 0;
 }
 .footer-p {
@@ -466,6 +466,30 @@ video {
 }
 
 /* Styling for the About */
+.about-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-video-wrapper {
+  width: 100%;
+  min-width: auto;
+  position: relative; /* keep position for video */
+}
+
+.about-video-title {
+  position: static; /* remove absolute positioning */
+  margin: 20px 0 10px 0; /* spacing between video and h3 */
+  white-space: normal; /* allow wrapping */
+  background-color: transparent; /* optional: remove bg */
+  color: #000; /* optional: better contrast on white bg */
+  padding: 0;
+  box-shadow: none;
+  min-width: auto;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
 #about ul {
   list-style: none;
 }
@@ -930,6 +954,51 @@ video {
     font-weight: 150;
     color: #f9f9f9;
   }
+  * Styling for the About */ .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  .about-left {
+    flex: 1 1 40%;
+    min-width: 300px;
+  }
+  .about-video-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: visible; /* <– Allow content outside video bounds */
+    flex: 1 1 40%;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    min-width: 300px;
+  }
+  .about-video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-video-title {
+    position: absolute;
+    bottom: -30px; /* push it below video */
+    right: -10px; /* push it to the right of video */
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 20px;
+    border-radius: 12px;
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    min-width: 50%; /* makes the box wider */
+    text-align: center; /* center text inside */
+  }
 }
 
 /* Medium devices (i.e. tablets in landscape */
@@ -958,6 +1027,38 @@ video {
     font-size: 1.5rem;
     font-weight: 150;
     color: #f9f9f9;
+  }
+  .about-video-wrapper {
+    margin-top: 70px;
+    position: relative;
+    border-radius: 12px;
+    overflow: visible; /* <– Allow content outside video bounds */
+    flex: 1 1 40%;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    min-width: 300px;
+  }
+  .about-video {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-video-title {
+    position: absolute;
+    bottom: -20px; /* push it below video */
+    right: -20px; /* push it to the right of video */
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 10px 20px;
+    border-radius: 12px;
+    z-index: 10;
+    white-space: nowrap;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+    min-width: 40%; /* makes the box wider */
+    text-align: center; /* center text inside */
   }
 }
 
