@@ -1048,7 +1048,7 @@ video {
   .about-video-title {
     position: absolute;
     bottom: -20px; /* push it below video */
-    right: -20px; /* push it to the right of video */
+    right: 100px; /* push it to the right of video */
     color: white;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.85);
@@ -1057,7 +1057,7 @@ video {
     z-index: 10;
     white-space: nowrap;
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
-    min-width: 40%; /* makes the box wider */
+    min-width: 30%; /* makes the box wider */
     text-align: center; /* center text inside */
   }
 }
@@ -1074,7 +1074,7 @@ video {
   }
 
   nav ul {
-    padding: 0 300px;
+    padding: 0 150px;
     flex-direction: row;
     align-items: baseline;
   }
