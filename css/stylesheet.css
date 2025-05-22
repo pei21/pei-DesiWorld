@@ -95,6 +95,7 @@ a:visited {
   color: var(--black);
 }
 .bold-p {
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (1800 - 400));
   font-weight: 600; /* or try 700 for even bolder */
   margin: 12px 0;
 }
@@ -837,6 +838,11 @@ video {
   }
   .about-p {
     grid-template-columns: 1fr;
+  }
+  .bold-p {
+    font-size: calc(24px + (24 - 16) * (100vw - 400px) / (1800 - 400));
+    font-weight: 600; /* or try 700 for even bolder */
+    margin: 12px 0;
   }
 
   .two-columns-video {
