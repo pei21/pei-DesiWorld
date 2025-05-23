@@ -745,7 +745,7 @@ video {
 }
 #contact .footer-content {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   text-align: left;
   align-self: flex-start;
@@ -1140,7 +1140,7 @@ video {
   }
   #contact .footer-content {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: left;
     align-self: flex-start;

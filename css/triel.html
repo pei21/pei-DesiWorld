@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rotating Circle with Text</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fafafa;
+      }
+      svg {
+        width: 200px;
+        height: 200px;
+      }
+      #rotatingGroup {
+        transform-origin: 50% 50%;
+        animation: roll 20s linear infinite; /* slower rotation */
+      }
+      @keyframes roll {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      circle {
+        fill: #ffb0e3;
+      }
+      text {
+        font-family: Arial, sans-serif;
+        font-size: 8px;
+        fill: #4a004a;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <g id="rotatingGroup">
+        <circle cx="50" cy="50" r="40" />
+        <text>
+          <textPath href="#circlePath" startOffset="0%">
+            Product Design is an amazing
+          </textPath>
+        </text>
+      </g>
+
+      <defs>
+        <path
+          id="circlePath"
+          d="M 50,10
+      a 40,40 0 1,1 0,80
+      a 40,40 0 1,1 0,-80"
+        />
+      </defs>
+    </svg>
+  </body>
+</html>
