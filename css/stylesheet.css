@@ -81,6 +81,7 @@ p {
   font-size: calc(20px + (20 - 16) * (100vw - 400px) / (1800 - 400));
   margin: 1rem 0;
 }
+
 .footer-p {
   color: var(--white);
   font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
@@ -523,7 +524,12 @@ video {
   height: auto; /* allow height to adjust */
 }
 .about-p {
-  font-size: calc(20px + (24 - 16) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(20px + (18 - 16) * (100vw - 400px) / (1800 - 400));
+  font-weight: 200; /* or try 700 for even bolder */
+  margin: 40px 0;
+}
+.about-p2 {
+  font-size: calc(24px + (20 - 16) * (100vw - 400px) / (1800 - 400));
   font-weight: 200; /* or try 700 for even bolder */
   margin: 40px 0;
 }
@@ -732,7 +738,7 @@ video {
   padding: 0;
   justify-content: center;
 }
-
+/* social media */
 #contact ul li a {
   text-decoration: none;
   color: var(--accent-colour);
