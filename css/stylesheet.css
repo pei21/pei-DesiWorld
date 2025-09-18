@@ -529,7 +529,7 @@ video {
   margin: 40px 0;
 }
 .about-p2 {
-  font-size: calc(24px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+  font-size: calc(24px + (24 - 16) * (100vw - 400px) / (1800 - 400));
   font-weight: 200; /* or try 700 for even bolder */
   margin: 40px 0;
 }
