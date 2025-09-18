@@ -38,7 +38,9 @@ h1,
 h2,
 h3,
 h4,
+h4-1,
 h5,
+h5-1,
 h6 {
   border-bottom: none;
   color: var(--black);
@@ -71,9 +73,17 @@ h4 {
   font-size: calc(30px + (30 - 20) * (100vw - 400px) / (1800 - 400));
   color: #ba551b;
 }
+h4-1 {
+  font-size: calc(28px + (28 - 20) * (100vw - 400px) / (1800 - 400));
+  color: var(--black);
+}
 h5 {
   font-size: calc(18px + (30 - 20) * (100vw - 400px) / (1800 - 400));
   color: var(--black);
+}
+h5-1 {
+  font-size: calc(18px + (30 - 20) * (100vw - 400px) / (1800 - 400));
+  color: #5b5b5b;
 }
 
 p {
