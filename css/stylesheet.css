@@ -491,24 +491,33 @@ video {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .about-video-wrapper {
-  width: 100%;
-  min-width: auto;
-  position: relative; /* keep position for video */
+  position: relative;
+  border-radius: 12px;
+  overflow: visible;
+  flex: 1 1 40%;
+  min-width: 300px;
 }
-
+.about-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
 .about-video-title {
-  position: static; /* remove absolute positioning */
-  margin: 20px 0 10px 0; /* spacing between video and h3 */
-  white-space: normal; /* allow wrapping */
-  background-color: transparent; /* optional: remove bg */
-  color: #000; /* optional: better contrast on white bg */
-  padding: 0;
-  box-shadow: none;
-  min-width: auto;
-  font-size: 1.8rem;
-  text-align: left;
+  position: absolute;
+  bottom: -30px;
+  right: -10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 10;
+  white-space: nowrap;
+  min-width: 50%;
+  text-align: center;
 }
 
 #about ul {
