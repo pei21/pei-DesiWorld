@@ -1237,6 +1237,13 @@ video {
     min-width: 30%; /* makes the box wider */
     text-align: center; /* center text inside */
   }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   #contact .footer-content {
     width: 100%;
     max-width: 800px;
@@ -1314,5 +1321,12 @@ video {
     margin: 0 auto;
     text-align: left;
     align-self: flex-start;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
