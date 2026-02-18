@@ -437,10 +437,7 @@ section > * {
   width: 80%; /* You can adjust this as needed */
   margin: 0 auto; /* This ensures the container is centered on the page */
 }
-video {
-  display: grid;
-  width: 100%;
-}
+
 .video-section {
   width: 100%;
   display: flex;
@@ -1330,4 +1327,3 @@ video {
     margin-bottom: 40px;
   }
 }
-
