@@ -1174,7 +1174,78 @@ section > * {
     text-align: center; /* center text inside */
   }
 }
+/* Extra small phone fix */
+@media (max-width: 608px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
 
+  .about-video-wrapper {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .about-video {
+    width: 100%;
+  }
+
+  .about-video-title {
+    position: static;
+    width: auto;
+    min-width: auto;
+    margin-top: 12px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .about-p,
+  .about-p2 {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 20px 0;
+  }
+
+  .intro-image-light {
+    width: 60%;
+  }
+  nav ul {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-video-title {
+    position: static;
+    margin-top: 12px;
+    right: auto;
+    bottom: auto;
+    min-width: auto;
+  }
+
+  .three-column1 {
+    height: auto;
+  }
+
+  .clients-card {
+    min-width: 240px;
+  }
+}
 /* Medium devices (i.e. tablets in landscape */
 @media (min-width: 900px) {
   .identify-solutions-grid {
